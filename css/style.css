@@ -1,0 +1,223 @@
+/* Simple styles for the portfolio site 
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+.hero { background: linear-gradient(90deg, rgba(255,255,255,1), rgba(245,245,250,1)); }
+.hero-image img { max-width: 100%; }
+.card img { height: 180px; object-fit: cover; }
+a { text-decoration: none; }*/
+/* ==== Portfolio Website Modern Clean Design ==== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --bg: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  box-shadow: 10px 12px 16px rgba(99, 26, 26, 0.1);
+}
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.nav-link {
+  transition: color 0.5s ease;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary) !important;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background: linear-gradient(120deg, #5f80bd, #e8b1b1);
+  text-align: left;
+  padding: 80px 0;
+  box-shadow: 5px 7px 5px #6c757d;
+}
+.hero h1 {
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+}
+.hero-image{
+    cursor: pointer;
+}
+
+.hero .btn {
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+/* ===== Section General ===== */
+section {
+  padding: 70px 0;
+  margin-bottom: 20px;
+  box-shadow: 10px 5px 7px #5f80bd;
+}
+section h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section h3::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: var(--primary);
+  margin-top: 8px;
+}
+
+/* ===== Cards ===== */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 14px 10px rgba(157, 33, 130, 0.08);
+  transition: transform .4s ease, box-shadow .3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 16px rgba(75, 26, 26, 0.12);
+  cursor: pointer;
+}
+.card-title {
+  font-weight: 700;
+}
+
+/* ===== Progress Bars (Skills) ===== */
+.progress {
+  height: 10px;
+  border-radius: 5px;
+  background: #e9ecef;
+  box-shadow: 5px 5px 5px violet;
+}
+.progress:hover {
+  height: 10px;
+  border-radius: 5px;
+  background: #e9ecef;
+  box-shadow: 5px 5px 5px rgb(215, 27, 215);
+}
+.progress-bar {
+  background-color: var(--primary);
+  box-sizing: border-box;
+  
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* === About section ===*/
+.about span{
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+
+}
+.about{
+  box-shadow: 5px 5px 11px rgba(0,123,255,0.3);
+}
+.about h1{
+  font-family:"Bebas Neue", sans-serif;
+  font-weight: bold;
+  font-size: 45px;
+  padding: 10px 0;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 3px rgb(72, 4, 72);
+}
+.aboutA li{
+  list-style: circle;
+  font-size: 17px;
+  font-family:"Bebas Neue", sans-serif;
+  font-style: italic;
+  color: #f8f9fa;
+  
+}
+.aboutA{
+  background: var(--secondary);
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px violet;
+}
+/* === Contact === section */
+.contact {
+  background: rgba(33, 55, 130, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 10px violet;
+}
+.contact h1{
+  text-shadow: 2px 2px 3px rgb(193, 16, 193);
+  font-weight: 700;
+  font-family:"Bebas Neue", sans-serif ;
+}
+.contactNav{
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px rgb(40, 38, 40);
+}
+.contactNav a{
+ font-family:"Bebas Neue", sans-serif ;
+ color: #e8b1b1;
+ font-style: italic;
+ 
+}
+
+
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  font-size: 15px;
+}
+footer a {
+  color: #adb5bd;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: var(--primary);
+}
+
+/* ===== Contact Form ===== */
+form input, form textarea {
+  border-radius: 10px !important;
+  border: 1px solid #ccc !important;
+  background: rgba(75, 26, 26, 0.12) !important;
+}
+form input:focus, form textarea:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 5px 5px rgba(128, 145, 164, 0.3);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+  .hero .btn {
+    margin-top: 10px;
+  }
+}
+
